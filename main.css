@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -5,21 +11,32 @@
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   z-index: 10;
   display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+/* hack for centering modal without aboslute positioning */
+.overlay:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.05em;
 }
 .modal {
   max-width: 480px;
-  height: 240px;
+  min-height: 240px;
   padding: 20px 40px;
   background: #fff;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow-y: scroll;
+  position: relative;
+  text-align: left;
   z-index: 20;
+  vertical-align: middle;
   display: none;
   
 }
@@ -32,5 +49,5 @@
 }
 
 .active {
-  display: block;
+  display: inline-block;
 }
