@@ -6,7 +6,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-.open-modal {
+.btn {
   padding: 20px 30px;
   background: #e64398;
   color: #fff;
@@ -14,7 +14,7 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
-.open-modal:hover {
+.btn:hover {
   background: #f172a1;
 }
 
@@ -47,8 +47,6 @@ body {
   display: none;
   vertical-align: middle;
   max-width: 480px;
-  min-height: 240px;
-  padding: 20px;
   width: 90%;
   background: #fff;
   position: relative;
@@ -57,8 +55,30 @@ body {
   border-radius: 7px;
   box-shadow: 0 0 5px #000;
   box-sizing: border-box;
-
 }
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #aaa;
+}
+.modal-header h3 {
+  margin: 0;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-footer {
+  padding: 20px;
+  border-top: 1px solid #aaa;
+  background-color: #ddd;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.modal-footer p {
+  margin: 0;
+}
+
+
 
 .close-modal {
   position: absolute;

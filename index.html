@@ -11,27 +11,43 @@
 <body>
 
   <div class="container">
-    <h1>Custom modal</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <button class="open-modal">Open modal</button>
+    <h1>Custom modal dialog with JS and CSS</h1>
+    <p>Modal features:</p>
+      <ul>
+        <li>Open button</li>
+        <li>Close icon</li>
+        <li>Close on click outside modal</li>
+        <li>Responsive</li>
+        <li>Auto centered</li>
+        <li>Vertical scrollbar appears whenever the modal content overflows</li>
+        <li>Visually customizable with:
+          <br>
+          <code>modal-header</code>
+          <br>
+          <code>modal-body</code>
+          <br>
+          <code>modal-footer</code>
+        </li>
+      </ul>
+    <button class="btn open-modal">Open modal</button>
   </div>
-
 
   <div class="overlay">
 
       <div class="modal">
-        <div class="modal-heading">
-          <h2>Modal Title</h2>
+        <a href="#" class="close-modal"></a>
+        <div class="modal-header">
+          <h3>Modal Title</h3>
         </div>
         <div class="modal-body">
-            <a href="#" class="close-modal"></a>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Sapiente quam! Sapiente libero nisi odit consequatur tenetur sit placeat? Exercitationem autem ut totam quas ipsum minus atque</p>
+          </div>
+        <div class="modal-footer">
+          <p>Modal Footer</p>
         </div>
-        <div class="modal-footer">Modal Footer</div>
       </div><!-- end modal -->
   </div>
-
 
   <script src="main.js"></script>
 </body>
